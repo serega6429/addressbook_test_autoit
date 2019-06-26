@@ -27,10 +27,8 @@ namespace addressbook_test_autoit
             aux.ControlTreeView(WINGROUPEDITORTITLE, "",
                     "WindowsForms10.SysTreeView32.app.0.2c908d51",
                 "Select", "#0|#0", "");
-            aux.ControlClick(WINTITLE, "", "WindowsForms10.BUTTON.app.0.2c908d51");
-            aux.WinWait("Delete group");
-            aux.ControlClick(WINTITLE, "", "WindowsForms10.BUTTON.app.0.2c908d51");
-            aux.ControlClick(WINTITLE, "", "WindowsForms10.BUTTON.app.0.2c908d53");
+            aux.Send("{DEL}");
+            aux.Send("{ENTER}");
             CloseGropsDialog();
             
 
